@@ -1,19 +1,19 @@
-package com.home;
+package april;
 
-import com.home.challenge.april.BeautifulArrangement;
-import com.home.challenge.april.CombinationSum;
-import com.home.challenge.april.DeepestLeavesSum;
-import com.home.challenge.april.FlattenNestedListIterator;
-import com.home.challenge.april.LetterCombinations;
-import com.home.challenge.april.ListNode;
-import com.home.challenge.april.LongestIncreasingPathInMatrix;
-import com.home.challenge.april.NestedInteger;
-import com.home.challenge.april.NestedIntegerImpl;
-import com.home.challenge.april.NumberSubmatricesThatSumTarget;
-import com.home.challenge.april.PartitionList;
-import com.home.challenge.april.RemoveAllAdjacentDuplicatesInString2;
-import com.home.challenge.april.RemoveNthNodeFromEndList;
-import com.home.challenge.april.VerifyingAlienDictionary;
+import april.common.ListNode;
+import april.week3.CombinationSum;
+import april.common.NestedIntegerImpl;
+import april.week3.NumberSubmatricesThatSumTarget;
+import april.week2.BeautifulArrangement;
+import april.week2.DeepestLeavesSum;
+import april.week2.FlattenNestedListIterator;
+import april.week2.LetterCombinations;
+import april.week2.LongestIncreasingPathInMatrix;
+import april.week2.NestedInteger;
+import april.week2.PartitionList;
+import april.week2.VerifyingAlienDictionary;
+import april.week3.RemoveAllAdjacentDuplicatesInString2;
+import april.week3.RemoveNthNodeFromEndList;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,7 +23,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-import static com.home.challenge.april.DeepestLeavesSum.TreeNode;
+import static april.week2.DeepestLeavesSum.TreeNode;
 
 public class Main {
 
@@ -32,7 +32,7 @@ public class Main {
         //testLongestIncreasingPathInMatrix();
         //testLetterCombinations();
         //testDeepestLeavesSum();
-        //testBeautifulArrangement();
+        testBeautifulArrangement();
         //testFlattenNestedListIterator();
         //testPartitionList();
         //testRemoveAllAdjacentDuplicatesInString();

@@ -1,4 +1,4 @@
-package com.home.challenge.april;
+package april.week3;
 
 import java.util.ArrayList;
 import java.util.Collections;

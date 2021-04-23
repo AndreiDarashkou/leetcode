@@ -1,4 +1,4 @@
-package com.home.challenge.april;
+package april.week3;
 
 public class RemoveAllAdjacentDuplicatesInString2 {
 

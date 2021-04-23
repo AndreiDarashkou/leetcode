@@ -1,4 +1,4 @@
-package com.home.challenge.april;
+package april.week3;
 
 public class CombinationSum {
 
@@ -25,9 +25,7 @@ public class CombinationSum {
                     }
                     count += (target - i * dup);
                 }
-
             }
-
         }
 
         return count;

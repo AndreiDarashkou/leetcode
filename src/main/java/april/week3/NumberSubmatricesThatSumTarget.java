@@ -1,4 +1,4 @@
-package com.home.challenge.april;
+package april.week3;
 
 public class NumberSubmatricesThatSumTarget {
 
@@ -46,12 +46,6 @@ public class NumberSubmatricesThatSumTarget {
                 sum += sum(matrix, row, col + w, 1, height);
             }
         }
-
-//        for (int r = row; r < row + height; r++) {
-//            for (int c = col; c < col + width; c++) {
-//                sum += matrix[r][c];
-//            }
-//        }
 
         cache[row][col][width][height] = sum;
 

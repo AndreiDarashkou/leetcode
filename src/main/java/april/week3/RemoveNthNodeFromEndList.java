@@ -1,4 +1,6 @@
-package com.home.challenge.april;
+package april.week3;
+
+import april.common.ListNode;
 
 public class RemoveNthNodeFromEndList {
 

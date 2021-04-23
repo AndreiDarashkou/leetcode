@@ -1,4 +1,4 @@
-package com.home.challenge.april;
+package april.week2;
 
 public class BeautifulArrangement {
 
