@@ -7,4 +7,4 @@ target/
 build/
 .gradle/
 .gradletasknamecache
-!gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.jar
