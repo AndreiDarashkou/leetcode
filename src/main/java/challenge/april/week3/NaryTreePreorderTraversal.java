@@ -1,4 +1,4 @@
-package april.week3;
+package challenge.april.week3;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package april.week2
+package challenge.april.week2
 
 import spock.lang.Specification
 import spock.lang.Unroll

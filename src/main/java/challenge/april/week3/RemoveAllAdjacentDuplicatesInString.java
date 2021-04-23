@@ -1,4 +1,4 @@
-package april.week3;
+package challenge.april.week3;
 
 import static java.util.stream.Collectors.joining;
 

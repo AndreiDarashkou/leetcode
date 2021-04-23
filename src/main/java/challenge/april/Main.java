@@ -1,29 +1,27 @@
-package april;
+package challenge.april;
 
-import april.common.ListNode;
-import april.week3.CombinationSum;
-import april.common.NestedIntegerImpl;
-import april.week3.NumberSubmatricesThatSumTarget;
-import april.week2.BeautifulArrangement;
-import april.week2.DeepestLeavesSum;
-import april.week2.FlattenNestedListIterator;
-import april.week2.LetterCombinations;
-import april.week2.LongestIncreasingPathInMatrix;
-import april.week2.NestedInteger;
-import april.week2.PartitionList;
-import april.week2.VerifyingAlienDictionary;
-import april.week3.RemoveAllAdjacentDuplicatesInString2;
-import april.week3.RemoveNthNodeFromEndList;
+import challenge.april.common.ListNode;
+import challenge.april.common.NestedIntegerImpl;
+import challenge.april.week2.DeepestLeavesSum;
+import challenge.april.week2.FlattenNestedListIterator;
+import challenge.april.week2.LetterCombinations;
+import challenge.april.week2.LongestIncreasingPathInMatrix;
+import challenge.april.week2.NestedInteger;
+import challenge.april.week2.PartitionList;
+import challenge.april.week2.VerifyingAlienDictionary;
+import challenge.april.week3.CombinationSum;
+import challenge.april.week3.NumberSubmatricesThatSumTarget;
+import challenge.april.week3.RemoveAllAdjacentDuplicatesInString2;
+import challenge.april.week3.RemoveNthNodeFromEndList;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-import static april.week2.DeepestLeavesSum.TreeNode;
+import static challenge.april.week2.DeepestLeavesSum.TreeNode;
 
 public class Main {
 
@@ -31,8 +29,7 @@ public class Main {
         //testVerifyingAlienDictionary();
         //testLongestIncreasingPathInMatrix();
         //testLetterCombinations();
-        //testDeepestLeavesSum();
-        testBeautifulArrangement();
+        testDeepestLeavesSum();
         //testFlattenNestedListIterator();
         //testPartitionList();
         //testRemoveAllAdjacentDuplicatesInString();
@@ -149,11 +146,6 @@ public class Main {
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
-    }
-
-    private static void testBeautifulArrangement() {
-        BeautifulArrangement arrangement = new BeautifulArrangement();
-        System.out.println(Arrays.toString(arrangement.constructArray(2, 1)));
     }
 
     private static void testVerifyingAlienDictionary() {

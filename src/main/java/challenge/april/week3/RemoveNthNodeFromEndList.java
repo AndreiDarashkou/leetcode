@@ -1,6 +1,6 @@
-package april.week3;
+package challenge.april.week3;
 
-import april.common.ListNode;
+import challenge.april.common.ListNode;
 
 public class RemoveNthNodeFromEndList {
 

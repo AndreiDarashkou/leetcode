@@ -1,4 +1,4 @@
-package april.week4;
+package challenge.april.week4;
 
 import java.util.*;
 

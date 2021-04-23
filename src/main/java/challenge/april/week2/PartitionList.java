@@ -1,6 +1,6 @@
-package april.week2;
+package challenge.april.week2;
 
-import april.common.ListNode;
+import challenge.april.common.ListNode;
 
 public class PartitionList {
 

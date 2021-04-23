@@ -1,4 +1,4 @@
-package april.week2;
+package challenge.april.week2;
 
 public class DeepestLeavesSum {
 

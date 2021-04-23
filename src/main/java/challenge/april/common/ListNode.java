@@ -1,4 +1,4 @@
-package april.common;
+package challenge.april.common;
 
 public class ListNode {
     public int val;
