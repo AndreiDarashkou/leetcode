@@ -8,7 +8,7 @@ class CountBinarySubstringsSpec extends Specification {
     @Unroll
     def "should return #result where str = #binaryStr"() {
         given:
-        CountBinarySubstrings binarySubstrings = new CountBinarySubstrings();
+        CountBinarySubstrings binarySubstrings = new CountBinarySubstrings()
         expect:
         binarySubstrings.countBinarySubstrings(binaryStr) == result
         where:

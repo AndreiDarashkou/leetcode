@@ -1,14 +1,16 @@
 package challenge.april.week4;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
+/**
+ * https://leetcode.com/explore/challenge/card/april-leetcoding-challenge-2021/596/week-4-april-22nd-april-28th/3717/
+ *
+ * There is a brick wall in front of you. The wall is rectangular and has several rows of bricks. The bricks have
+ * the same height but different width. You want to draw a vertical line from the top to the bottom and cross the least bricks.
+ */
 public class BrickWall {
-
-    public static void main(String[] args) {
-        System.out.println(leastBricks(list(list(1), list(1), list(1))));
-        System.out.println(leastBricks(list(list(1, 1), list(2), list(1, 1))));
-        System.out.println(leastBricks(list(list(1, 2, 2, 1), list(3, 1, 2), list(1, 3, 2), list(2, 4), list(3, 1, 2), list(1, 3, 1, 1))));
-    }
 
     public static int leastBricks(List<List<Integer>> wall) {
 
@@ -66,12 +68,4 @@ public class BrickWall {
 
         return wall.size() - max;
     }
-
-    private static <T> List<T> list(T... elements) {
-        List<T> list = new ArrayList<>();
-        Collections.addAll(list, elements);
-
-        return list;
-    }
-
 }
