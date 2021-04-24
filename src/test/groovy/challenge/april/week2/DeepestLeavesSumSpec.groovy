@@ -12,7 +12,6 @@ import spock.lang.Unroll
  */
 class DeepestLeavesSumSpec extends Specification {
 
-    @Unroll
     def "should return the sum of values of tree deepest leaves"() {
         given:
         TreeNode node4 = new TreeNode(4, new TreeNode(7), null)
