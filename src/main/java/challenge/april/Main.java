@@ -1,12 +1,9 @@
 package challenge.april;
 
 import challenge.april.common.ListNode;
-import challenge.april.common.NestedIntegerImpl;
 import challenge.april.week2.DeepestLeavesSum;
-import challenge.april.week2.FlattenNestedListIterator;
 import challenge.april.week2.LetterCombinations;
 import challenge.april.week2.LongestIncreasingPathInMatrix;
-import challenge.april.week2.NestedInteger;
 import challenge.april.week2.PartitionList;
 import challenge.april.week2.VerifyingAlienDictionary;
 import challenge.april.week3.CombinationSum;
@@ -17,8 +14,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 import static challenge.april.week2.DeepestLeavesSum.TreeNode;
@@ -30,7 +25,6 @@ public class Main {
         //testLongestIncreasingPathInMatrix();
         //testLetterCombinations();
         testDeepestLeavesSum();
-        //testFlattenNestedListIterator();
         //testPartitionList();
         //testRemoveAllAdjacentDuplicatesInString();
         //testNumberSubmatricesThatSumTarget();
@@ -110,41 +104,6 @@ public class Main {
         while (result != null) {
             System.out.print(result.val + " ");
             result = result.next;
-        }
-    }
-
-    private static void testFlattenNestedListIterator() {
-        List<NestedInteger> nestedList = new ArrayList<>();
-
-        nestedList.add(new NestedIntegerImpl(List.of(new NestedIntegerImpl((Integer) null))));
-
-        nestedList.add(new NestedIntegerImpl(5));
-        nestedList.add(new NestedIntegerImpl(6));
-
-        List<NestedInteger> nestedList2 = new ArrayList<>();
-        nestedList2.add(new NestedIntegerImpl(1));
-        nestedList2.add(new NestedIntegerImpl(2));
-        nestedList2.add(new NestedIntegerImpl(3));
-        nestedList.add(new NestedIntegerImpl(nestedList2));
-
-        nestedList.add(new NestedIntegerImpl(8));
-
-        List<NestedInteger> nestedList3 = new ArrayList<>();
-        nestedList3.add(new NestedIntegerImpl(12));
-        nestedList3.add(new NestedIntegerImpl(13));
-        nestedList3.add(new NestedIntegerImpl(14));
-
-        nestedList3.add(new NestedIntegerImpl(List.of(new NestedIntegerImpl(890), new NestedIntegerImpl(555),
-                new NestedIntegerImpl(List.of(new NestedIntegerImpl(-777))))));
-
-        nestedList.add(new NestedIntegerImpl(nestedList3));
-
-        nestedList.add(new NestedIntegerImpl(99));
-
-        FlattenNestedListIterator iterator = new FlattenNestedListIterator(nestedList);
-
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
         }
     }
 
