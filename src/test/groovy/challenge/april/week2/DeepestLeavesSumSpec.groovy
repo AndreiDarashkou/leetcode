@@ -1,15 +1,9 @@
 package challenge.april.week2
 
-import static challenge.april.week2.DeepestLeavesSum.TreeNode;
-
 import spock.lang.Specification
-import spock.lang.Unroll
 
-/**
- * https://leetcode.com/explore/challenge/card/april-leetcoding-challenge-2021/594/week-2-april-8th-april-14th/3704/
- *
- * Given the root of a binary tree, return the sum of values of its deepest leaves.
- */
+import static challenge.april.week2.DeepestLeavesSum.TreeNode
+
 class DeepestLeavesSumSpec extends Specification {
 
     def "should return the sum of values of tree deepest leaves"() {

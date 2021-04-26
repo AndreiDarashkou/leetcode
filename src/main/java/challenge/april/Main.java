@@ -23,7 +23,6 @@ public class Main {
     public static void main(String[] args) throws IOException {
         //testVerifyingAlienDictionary();
         //testLongestIncreasingPathInMatrix();
-        //testLetterCombinations();
         testDeepestLeavesSum();
         //testPartitionList();
         //testRemoveAllAdjacentDuplicatesInString();
@@ -151,11 +150,6 @@ public class Main {
         TreeNode node1 = new TreeNode(1, node2, node3);
 
         System.out.println(DeepestLeavesSum.deepestLeavesSum(node1));
-    }
-
-    private static void testLetterCombinations() {
-        LetterCombinations combinations = new LetterCombinations();
-        System.out.println(combinations.letterCombinations("234"));
     }
 
     public static int findMaxConsecutiveOnes(int[] nums) {
