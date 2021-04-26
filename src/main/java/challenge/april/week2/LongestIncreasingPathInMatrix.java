@@ -1,5 +1,12 @@
 package challenge.april.week2;
 
+/**
+ * https://leetcode.com/explore/challenge/card/april-leetcoding-challenge-2021/594/week-2-april-8th-april-14th/3703/
+ * <p>
+ * Given an m x n integers matrix, return the length of the longest increasing path in matrix.
+ * From each cell, you can either move in four directions: left, right, up, or down. You may not move diagonally or move
+ * outside the boundary (i.e., wrap-around is not allowed).
+ */
 public class LongestIncreasingPathInMatrix {
 
     private int[][] cache;

@@ -1,9 +1,6 @@
 package challenge.april;
 
 import challenge.april.common.ListNode;
-import challenge.april.week2.DeepestLeavesSum;
-import challenge.april.week2.LetterCombinations;
-import challenge.april.week2.LongestIncreasingPathInMatrix;
 import challenge.april.week2.PartitionList;
 import challenge.april.week2.VerifyingAlienDictionary;
 import challenge.april.week3.CombinationSum;
@@ -16,14 +13,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Random;
 
-import static challenge.april.week2.DeepestLeavesSum.TreeNode;
-
 public class Main {
 
     public static void main(String[] args) throws IOException {
         //testVerifyingAlienDictionary();
-        //testLongestIncreasingPathInMatrix();
-        testDeepestLeavesSum();
         //testPartitionList();
         //testRemoveAllAdjacentDuplicatesInString();
         //testNumberSubmatricesThatSumTarget();
@@ -114,42 +107,6 @@ public class Main {
         System.out.println(dictionary.isAlienSorted(new String[]{"bsd", "baa"}, "abcdefghijklmnopqrstuvwxyz"));
         System.out.println(dictionary.isAlienSorted(new String[]{"abc", "abcc"}, "abcdefghijklmnopqrstuvwxyz"));
         System.out.println(dictionary.isAlienSorted(new String[]{"abcc", "abc"}, "abcdefghijklmnopqrstuvwxyz"));
-    }
-
-    private static void testLongestIncreasingPathInMatrix() {
-        LongestIncreasingPathInMatrix pathInMatrix = new LongestIncreasingPathInMatrix();
-        int path1 = pathInMatrix.longestIncreasingPath(new int[][]{{9, 9, 4}, {6, 6, 8}, {2, 1, 1}});
-        System.out.println(path1);
-
-        path1 = pathInMatrix.longestIncreasingPath(new int[][]{{3, 4, 5}, {3, 2, 6}, {2, 2, 1}});
-        System.out.println(path1);
-
-        path1 = pathInMatrix.longestIncreasingPath(new int[][]{{1, 2, 3}, {6, 5, 4}, {7, 8, 9}});
-        System.out.println(path1);
-
-        path1 = pathInMatrix.longestIncreasingPath(new int[][]{{5, 7, 10, 9}, {1, 2, 3, 7}, {9, 4, 2, 7}, {8, 8, 5, 3}});
-        System.out.println(path1);
-
-        int path2 = pathInMatrix.longestIncreasingPath(new int[][]{{7, 7, 5}, {2, 4, 6}, {8, 2, 0}});
-        System.out.println(path2);
-
-        int[][] matrix = generateRandom(200, 100, 0, Integer.MAX_VALUE);
-        long st = System.currentTimeMillis();
-        int path = pathInMatrix.longestIncreasingPath(matrix);
-        long end = System.currentTimeMillis();
-        System.out.println(end - st);
-    }
-
-    private static void testDeepestLeavesSum() {
-        TreeNode node4 = new TreeNode(4, new TreeNode(7), null);
-        TreeNode node2 = new TreeNode(2, node4, new TreeNode(5));
-
-        TreeNode node6 = new TreeNode(6, null, new TreeNode(8));
-        TreeNode node3 = new TreeNode(3, null, node6);
-
-        TreeNode node1 = new TreeNode(1, node2, node3);
-
-        System.out.println(DeepestLeavesSum.deepestLeavesSum(node1));
     }
 
     public static int findMaxConsecutiveOnes(int[] nums) {
