@@ -1,7 +1,6 @@
 package challenge.april;
 
 import challenge.april.common.ListNode;
-import challenge.april.week2.PartitionList;
 import challenge.april.week2.VerifyingAlienDictionary;
 import challenge.april.week3.CombinationSum;
 import challenge.april.week3.NumberSubmatricesThatSumTarget;
@@ -17,7 +16,6 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         //testVerifyingAlienDictionary();
-        //testPartitionList();
         //testRemoveAllAdjacentDuplicatesInString();
         //testNumberSubmatricesThatSumTarget();
         //testRemoveNthNodeFromEndList();
@@ -80,23 +78,6 @@ public class Main {
             cur = fib;
         }
         return fib;
-    }
-
-    private static void testPartitionList() {
-        PartitionList partitionList = new PartitionList();
-
-        ListNode node = new ListNode(1, new ListNode(4, new ListNode(3, new ListNode(-100, new ListNode(2, new ListNode(5,
-                new ListNode(2)))))));
-
-        //ListNode node = new ListNode(2, new ListNode(1));
-
-        ListNode result = partitionList.partition(node, 3);
-
-        System.out.println("[1,4,3,0,2,5,2]");
-        while (result != null) {
-            System.out.print(result.val + " ");
-            result = result.next;
-        }
     }
 
     private static void testVerifyingAlienDictionary() {
