@@ -35,5 +35,4 @@ class PartitionListSpec extends Specification {
         }
         result
     }
-
 }

@@ -2,6 +2,11 @@ package challenge.april.week3;
 
 import challenge.april.common.ListNode;
 
+/**
+ * https://leetcode.com/explore/challenge/card/april-leetcoding-challenge-2021/595/week-3-april-15th-april-21st/3712/
+ *
+ * Given the head of a linked list, remove the nth node from the end of the list and return its head.
+ */
 public class RemoveNthNodeFromEndList {
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
