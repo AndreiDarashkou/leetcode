@@ -1,5 +1,11 @@
 package challenge.april.week3;
 
+
+/**
+ * https://leetcode.com/explore/challenge/card/april-leetcoding-challenge-2021/595/week-3-april-15th-april-21st/3710/
+ *
+ * The second approach.
+ */
 public class RemoveAllAdjacentDuplicatesInString2 {
 
     public String removeDuplicates(String str, int k) {

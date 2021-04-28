@@ -1,10 +1,7 @@
 package challenge.april;
 
 import challenge.april.common.ListNode;
-import challenge.april.week2.VerifyingAlienDictionary;
-import challenge.april.week3.CombinationSum;
 import challenge.april.week3.NumberSubmatricesThatSumTarget;
-import challenge.april.week3.RemoveAllAdjacentDuplicatesInString2;
 import challenge.april.week3.RemoveNthNodeFromEndList;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,16 +12,8 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        //testVerifyingAlienDictionary();
-        //testRemoveAllAdjacentDuplicatesInString();
         //testNumberSubmatricesThatSumTarget();
         //testRemoveNthNodeFromEndList();
-        testCombinationSum();
-    }
-
-    private static void testCombinationSum() {
-        CombinationSum combinationSum = new CombinationSum();
-        System.out.println(combinationSum.combinationSum4(new int[]{1, 2, 3}, 5));
     }
 
     private static void testRemoveNthNodeFromEndList() {
@@ -40,17 +29,6 @@ public class Main {
         System.out.println(System.currentTimeMillis());
         System.out.println(target.numSubmatrixSumTarget(matrix, 3));
         System.out.println(System.currentTimeMillis());
-    }
-
-    private static void testRemoveAllAdjacentDuplicatesInString() throws IOException {
-        Class clazz = Main.class;
-        InputStream inputStream = clazz.getResourceAsStream("fileTest.txt");
-        String data = readFromInputStream(inputStream);
-
-        System.out.println(System.currentTimeMillis());
-        String res = new RemoveAllAdjacentDuplicatesInString2().removeDuplicates("pbbcggttciiippooaais", 2);
-        System.out.println(System.currentTimeMillis());
-        System.out.println(res);
     }
 
     private static String readFromInputStream(InputStream inputStream)
@@ -78,16 +56,6 @@ public class Main {
             cur = fib;
         }
         return fib;
-    }
-
-    private static void testVerifyingAlienDictionary() {
-        VerifyingAlienDictionary dictionary = new VerifyingAlienDictionary();
-        System.out.println(dictionary.isAlienSorted(new String[]{"asd"}, "abcdefghijklmnopqrstuvwxyz"));
-        System.out.println(dictionary.isAlienSorted(new String[]{"aaa", "bbb", "caa"}, "abcdefghijklmnopqrstuvwxyz"));
-        System.out.println(dictionary.isAlienSorted(new String[]{"asd", "baa"}, "abcdefghijklmnopqrstuvwxyz"));
-        System.out.println(dictionary.isAlienSorted(new String[]{"bsd", "baa"}, "abcdefghijklmnopqrstuvwxyz"));
-        System.out.println(dictionary.isAlienSorted(new String[]{"abc", "abcc"}, "abcdefghijklmnopqrstuvwxyz"));
-        System.out.println(dictionary.isAlienSorted(new String[]{"abcc", "abc"}, "abcdefghijklmnopqrstuvwxyz"));
     }
 
     public static int findMaxConsecutiveOnes(int[] nums) {
