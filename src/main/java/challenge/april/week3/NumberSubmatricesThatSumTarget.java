@@ -1,5 +1,10 @@
 package challenge.april.week3;
 
+/**
+ * https://leetcode.com/explore/challenge/card/april-leetcoding-challenge-2021/595/week-3-april-15th-april-21st/3711/
+ *
+ * Given a matrix and a target, return the number of non-empty submatrices that sum to target.
+ */
 public class NumberSubmatricesThatSumTarget {
 
     private int[][][][] cache;
