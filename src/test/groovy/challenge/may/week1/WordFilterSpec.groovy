@@ -1,6 +1,5 @@
-package challenge.may
+package challenge.may.week1
 
-import challenge.may.week1.WordFilter
 import spock.lang.Specification
 import spock.lang.Unroll
 
