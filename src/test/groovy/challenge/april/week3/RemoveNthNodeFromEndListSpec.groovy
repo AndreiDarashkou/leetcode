@@ -19,6 +19,7 @@ class RemoveNthNodeFromEndListSpec extends Specification {
         [1, 4, 3, 2, 5, 2]             | 3                   | [1, 4, 3, 5, 2]
         [7, 9, 5, 4, 5, 2, 2, 6, 8, 1] | 2                   | [7, 9, 5, 4, 5, 2, 2, 6, 1]
         [2, 1]                         | 2                   | [1]
+        [1, 2, 3]                      | 1                   | [1, 2]
     }
 
     static def createNestedList(List<Integer> values) {
