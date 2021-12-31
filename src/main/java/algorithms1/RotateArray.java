@@ -10,10 +10,10 @@ package algorithms1;
  */
 public class RotateArray {
 
-    public static void rotate1(int[] nums, int k) {
+    public static int[] rotate1(int[] nums, int k) {
         int size = nums.length;
         if (k == 0 || k == size) {
-            return;
+            return nums;
         }
         k = k % size;
 
@@ -27,12 +27,14 @@ public class RotateArray {
         for (int i = 0; i < k; i++) {//copy tail
             nums[i] = temp[i];
         }
+
+        return nums;
     }
 
-    public static void rotate2(int[] nums, int k) {
+    public static int[] rotate2(int[] nums, int k) {
         int size = nums.length;
         if (k == 0 || k == size) {
-            return;
+            return nums;
         }
         k = k % size;
 
@@ -40,6 +42,8 @@ public class RotateArray {
         reverse(nums, 0, size - 1);//7,6,5,4,3,2,1
         reverse(nums, 0, k - 1);//5,6,7,4,3,2,1
         reverse(nums, k, size - 1);//5,6,7,1,2,3,4
+
+        return nums;
     }
 
     private static void reverse(int[] nums, int from, int to) {

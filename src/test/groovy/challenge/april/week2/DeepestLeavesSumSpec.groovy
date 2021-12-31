@@ -1,8 +1,7 @@
 package challenge.april.week2
 
+import challenge.april.common.TreeNode
 import spock.lang.Specification
-
-import static challenge.april.week2.DeepestLeavesSum.TreeNode
 
 class DeepestLeavesSumSpec extends Specification {
 

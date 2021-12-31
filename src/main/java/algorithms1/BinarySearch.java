@@ -13,7 +13,7 @@ public class BinarySearch {
         return search(nums, 0, nums.length - 1, target);
     }
 
-    public static int search(int[] nums, int min, int max, int target) {
+    private static int search(int[] nums, int min, int max, int target) {
         if (min == max || max - min == 1) {
             if (nums[min] == target) return min;
             if (nums[max] == target) return max;
