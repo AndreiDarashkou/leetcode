@@ -1,4 +1,4 @@
-package challenge.april.common;
+package common;
 
 import java.util.ArrayList;
 import java.util.Collections;
