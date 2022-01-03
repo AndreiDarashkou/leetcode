@@ -1,6 +1,6 @@
 package challenge.april.week2
 
-import challenge.april.common.ListNode
+import common.ListNode
 import spock.lang.Specification
 
 class PartitionListSpec extends Specification {

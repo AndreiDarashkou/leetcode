@@ -1,6 +1,6 @@
 package algorithms1
 
-import challenge.april.common.ListNode
+import common.ListNode
 import spock.lang.Specification
 import spock.lang.Unroll
 

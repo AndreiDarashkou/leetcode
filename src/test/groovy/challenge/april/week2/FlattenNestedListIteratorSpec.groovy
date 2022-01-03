@@ -1,6 +1,6 @@
 package challenge.april.week2
 
-import challenge.april.common.NestedIntegerImpl
+import common.NestedIntegerImpl
 import spock.lang.Specification
 import spock.lang.Unroll
 
