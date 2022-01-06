@@ -1,4 +1,4 @@
-package challenge.april.common;
+package common;
 
 import challenge.april.week2.NestedInteger;
 import java.util.Collections;
