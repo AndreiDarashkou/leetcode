@@ -2,9 +2,11 @@ package challenge.april.week2
 
 import common.ListNode
 import spock.lang.Specification
+import spock.lang.Unroll
 
 class PartitionListSpec extends Specification {
 
+    @Unroll
     def "should move all elements from #values to left from pivot #pivot"() {
         given:
         def headNode = createNestedList(values)

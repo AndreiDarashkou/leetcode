@@ -1,11 +1,12 @@
 package algorithms1
 
-
 import common.TreeNode
 import spock.lang.Specification
+import spock.lang.Unroll
 
 class MergeTwoBinaryTreesSpec extends Specification {
 
+    @Unroll
     def "should merge tree #tree1 with #tree2 into #mergedTree"() {
         given:
         TreeNode root1 = toTree(tree1)
