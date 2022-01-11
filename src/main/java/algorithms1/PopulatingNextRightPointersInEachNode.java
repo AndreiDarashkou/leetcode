@@ -1,6 +1,9 @@
 package algorithms1;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.List;
 
 /**
  * https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
@@ -85,9 +88,6 @@ public class PopulatingNextRightPointersInEachNode {
         public Node left;
         public Node right;
         public Node next;
-
-        public Node() {
-        }
 
         public Node(int _val) {
             val = _val;
