@@ -9,6 +9,7 @@ class NumberOf1BitsSpec extends Specification {
     def "should return number of bits #count for number #number"() {
         expect:
         NumberOf1Bits.hammingWeight(number) == count
+        NumberOf1Bits.hammingWeight2(number) == count
         where:
         number | count
         1      | 1 //0001
