@@ -19,4 +19,16 @@ public class ReverseBits {
         }
         return result;
     }
+
+    public static int reverseBits2(int n) {
+        int result = 0;
+        for (int rank = 0; rank < 32; rank++) {
+            result = result << 1;
+            if ((n & 1) == 1) {
+                result++;
+            }
+            n = n >>> 1;
+        }
+        return result;
+    }
 }
