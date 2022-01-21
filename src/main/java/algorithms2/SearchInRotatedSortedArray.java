@@ -3,7 +3,7 @@ package algorithms2;
 /**
  * https://leetcode.com/problems/search-in-rotated-sorted-array/
  */
-public class SearchInRotatedSortedArray {
+public class SearchInRotatedSortedArray {//todo rewrite, simplify
 
     public static int search(int[] nums, int target) {
         if (nums.length == 1) {
