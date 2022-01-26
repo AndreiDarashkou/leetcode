@@ -5,6 +5,5 @@
 .idea/
 target/
 build/
-.gradle/
 .gradletasknamecache
 /gradle/wrapper/gradle-wrapper.jar
