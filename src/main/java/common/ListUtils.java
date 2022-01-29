@@ -1,8 +1,6 @@
 package common;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public final class ListUtils {
 
@@ -17,4 +15,12 @@ public final class ListUtils {
         return list;
     }
 
+    public static ListNode toLinkedList(List<Integer> values) {
+        ListNode headNode = null;
+        Iterator<Integer> it = new ArrayDeque<>(values).descendingIterator();
+        while(it.hasNext()) {
+            headNode = new ListNode(it.next(), headNode);
+        }
+        return headNode;
+    }
 }
