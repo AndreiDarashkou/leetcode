@@ -1,10 +1,12 @@
 package algorithms2
 
 import spock.lang.Specification
+import spock.lang.Unroll
 
 class IntervalListIntersectionsSpec extends Specification {
 
-    def "test intervalIntersection"() {
+    @Unroll
+    def "should return all intersections #resultList"() {
         expect:
         IntervalListIntersections.intervalIntersection(firstList as int[][], secondList as int[][]) == resultList as int[][]
         where:
