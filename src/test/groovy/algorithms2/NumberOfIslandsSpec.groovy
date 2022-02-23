@@ -7,7 +7,7 @@ import spock.lang.Unroll
 class NumberOfIslandsSpec extends Specification {
 
     @Unroll
-    def "should return number of islands @number for grid #grid"() {
+    def "should return number of islands #number for grid #grid"() {
         expect:
         NumberOfIslands.numIslands(grid as char[][]) == number
         where:
