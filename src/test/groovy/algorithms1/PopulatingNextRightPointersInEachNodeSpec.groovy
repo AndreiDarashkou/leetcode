@@ -1,6 +1,6 @@
 package algorithms1
 
-import algorithms1.PopulatingNextRightPointersInEachNode.Node
+import common.Node
 import spock.lang.Specification
 
 class PopulatingNextRightPointersInEachNodeSpec extends Specification {
