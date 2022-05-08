@@ -22,7 +22,9 @@ public class WordFilter {
         String toPrefix = prefix + "z".repeat(MAX_PREFIX_LENGTH - prefix.length());
 
         return map.subMap(prefix, true, toPrefix, true).entrySet()
-                .stream().filter(e -> e.getKey().endsWith(suffix)).map(Map.Entry::getValue)
+                .stream()
+                .filter(e -> e.getKey().endsWith(suffix))
+                .map(Map.Entry::getValue)
                 .max(Comparator.naturalOrder()).orElse(-1);
     }
 }
