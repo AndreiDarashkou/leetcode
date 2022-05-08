@@ -1,6 +1,5 @@
 package common;
 
-import challenge.april.week2.NestedInteger;
 import java.util.Collections;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package challenge.april.week2;
+package common;
 
 import java.util.List;
 
