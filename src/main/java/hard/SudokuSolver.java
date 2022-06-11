@@ -2,6 +2,8 @@ package hard;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * https://leetcode.com/problems/sudoku-solver/
@@ -17,19 +19,8 @@ import java.util.List;
  */
 public final class SudokuSolver {
 
-    private static final List<Character> NUMBERS = new ArrayList<>();
-
-    static {
-        NUMBERS.add('1');
-        NUMBERS.add('2');
-        NUMBERS.add('3');
-        NUMBERS.add('4');
-        NUMBERS.add('5');
-        NUMBERS.add('6');
-        NUMBERS.add('7');
-        NUMBERS.add('8');
-        NUMBERS.add('9');
-    }
+    private static final List<Character> NUMBERS = Stream.of('1', '2', '3', '4', '5', '6', '7', '8', '9')
+            .collect(Collectors.toList());
 
     public static void solveSudoku(char[][] board) {
         List<int[]> emptyCells = new ArrayList<>();
@@ -67,30 +58,18 @@ public final class SudokuSolver {
     }
 
     private static List<Character> suitable(char[][] board, int row, int col) {
-        List<Character> arr = new ArrayList<>(NUMBERS);
+        List<Character> suitableChars = new ArrayList<>(NUMBERS);
         for (int i = 0; i < 9; i++) {
-            arr.remove((Character) board[row][i]);
-            arr.remove((Character) board[i][col]);
+            suitableChars.remove((Character) board[row][i]);
+            suitableChars.remove((Character) board[i][col]);
         }
-        if (row < 3) {
-            row = 0;
-        } else if (row < 6) {
-            row = 3;
-        } else {
-            row = 6;
-        }
-        if (col < 3) {
-            col = 0;
-        } else if (col < 6) {
-            col = 3;
-        } else {
-            col = 6;
-        }
+        row = (row - (row % 3));
+        col = (col - (col % 3));
         for (int i = row; i < row + 3; i++) {
             for (int j = col; j < col + 3; j++) {
-                arr.remove((Character) board[i][j]);
+                suitableChars.remove((Character) board[i][j]);
             }
         }
-        return arr;
+        return suitableChars;
     }
 }
